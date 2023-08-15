@@ -1,0 +1,154 @@
+body{
+    background-color: rgba(98, 143, 138, 1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(115, 165, 202, 1);
+    margin-top: 20px;
+}
+
+.d_nav.l_text, .d_nav.l_list, .d_nav.l_img, .d_nav.l_table, .d_nav.l_frm{
+    background-color: rgba(236, 133, 88, 1);
+    width: 18%;
+    height: 35px;
+    border: 2px solid grey;
+    border-radius: 10px 30px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+    margin-left: 16px;
+    margin-right: 5px;
+    margin-top: 13px;
+    box-shadow: 5px 5px 5px 0px rgb(78, 78, 79);
+}
+
+.link_nav:link{
+    color: rgb(252, 253, 254);
+    text-decoration: none;
+}
+.link_nav:visited{
+    color: rgb(248, 249, 250);
+    text-decoration: none;
+}
+
+main{
+    background-color: rgba(98, 143, 138, 0.64);
+    width: 70%;
+    height: auto;
+    margin-left: 10px;
+    float: left;
+    margin-top: 140px;
+}
+
+main h3{
+    color: white;
+}
+
+.d_main{
+    background-color: rgba(255, 239, 231, 1);
+    padding: 5px 15px 15px 15px;
+    border: 3px solid grey;
+    box-shadow: 5px 5px 5px 0 gray;
+    height: auto;
+}
+.d_main.m_list1, .d_main.m_list2 {
+    width: 45%;
+    height: 200px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.img{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article{
+    background-color: rgba(255, 239, 231, 1);
+    width: 27%;
+    height: auto;
+    margin-right: 5px;
+    font-size: 12px;
+    float: right;
+    padding-left: 5px;
+    padding-right: 8px;
+    margin-top: 180px;
+}
+article h3{
+    background-color: rgb(249, 247, 246);
+    color: green;
+}
+
+ul{
+    list-style-type: square;
+}
+
+table, th, td {border: 1px solid black;}
+td {text-align: center;}
+
+.inpFrm{
+   width: 80%;
+}
+.d_frm{
+    margin-top: 25px;
+    padding-left: 25px ;
+}
+
+footer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.d_footer.d_footer.d_footer.telegram, .d_footer.insta, .d_footer.label{
+    width: auto;
+    height: 80px;
+    float: right;
+    right: 0;
+    margin-right: 15px;
+    margin-left: 15px;  
+    margin-top: 15px;
+}
+
+h3{
+    color: aliceblue;
+}
+
+h1{
+    color: rgb(250, 251, 251); 
+    text-decoration: underline; 
+    padding: 10px; 
+    display: block;
+    background-color: rgba(115, 166, 193, 1);
+    width: 50%;
+}

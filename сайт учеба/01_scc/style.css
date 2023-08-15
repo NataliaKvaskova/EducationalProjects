@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;}
+    
+
+html{
+    font-family: 'Montserrat', 'Open Sans', 'Outfit', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+html{
+    scrollbar-width:thin;
+    scrollbar-color: rgb(249, 158, 55) rgba(227, 232, 13, 1);
+}
+
+body::-webkit-scrollbar {
+    width: 0.8rem; /* Ширина всего элемента навигации */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, rgba(245,135,7,1) 35%, rgba(240,191,22,1) 74%);/* Цвет дорожки */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(213, 211, 211); /* Цвет бегунка */
+    border-radius: 0.5rem; /* Округление бегунка */
+    border: 0.1rem solid rgb(137, 137, 137); /* Оформление границ бегунка */
+  }
+
+.page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 35% 55% 10%;
+    border-color: aqua;
+    justify-content: center;
+    align-content: center;
+    row-gap: 0.1rem;
+    column-gap: 1rem;
+}
+
+header{
+   grid-column-start: 1;
+   grid-column-end: 3;
+    background-image: url('../03_img/Шапка_основная\ 1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+h1{
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    bottom: 2rem;
+}
+
+main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+
+}
+
+.card_box{
+    width: 17.5rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(198, 196, 196);
+    padding: 1rem;
+}
+
+.card_img{
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%;
+}
+
+.card_box a{
+    display: block;
+    max-width: 15rem;
+    margin: auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 2px solid #d5d5d5 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+    padding-top: 1rem;
+    gap: 1rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.icons_telegram {
+    width: 3rem;
+    height: 3rem;
+}
+
+.icons_whatsapp{
+    width: 3.5rem;
+    height: 3.5rem;;
+}
+
+footer p{
+    margin-right: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1.5rem;
+    overflow: auto;
+}
+
+aside h2{
+    width: 100%;
+    text-align: center;
+}
+
+.aside_tbl{
+    width: 90%;
+    margin-top: 1.5rem;  
+    border-spacing: 0 1rem;
+}
+
+.aside_tbl td:first-child {
+    text-align: right;
+}
+
+.aside_tbl td{
+    vertical-align: top;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.td1{
+    border-left: 2px solid #faeaac
+    
+}

@@ -1,0 +1,320 @@
+@font-face {
+    font-family:"Aharoni Bold";src:url("../04_fonts/ahronbd.ttf");
+} 
+    
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(36, 36, 36, 1);
+    font-family: 'Alata', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Aharoni Bold, sans-serif';
+    /* padding: 11px 10px ; */
+}
+
+.page{
+    display: flex;
+    justify-content: flex-start;
+    min-width: 1440px;
+    min-height: 1024px;
+    position: relative;
+    margin: 11px 10px;
+    
+    border-radius: 100px;
+    background-color: rgba(34, 26, 55, 1);
+    box-shadow: 0px 0px 75px 35px rgba(0, 0, 0, 0.26);
+    
+}
+
+
+.content_box.img1 {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; 
+    width: 1238px;
+    height: 953px;  
+    border-radius: 0px 0px 0px 90px;
+    margin: 11px 10px;
+}
+
+.header_box{
+    width: 100%;
+    min-height: 181px;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.elLogo{
+    width: auto;
+    height: 37px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);font-family: Alata;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(232, 232, 232, 1);
+} 
+
+.el_link{
+    display: flex;
+    min-width: 1145px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px 36px;
+    justify-content: end;
+    align-items: center;
+    gap: 32px;
+}
+
+.link{
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-family: Alata;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(232, 232, 232, 1);
+    text-decoration-line: none;
+}
+
+.link1{
+    display: flex;
+    align-items: center;
+    background-color: rgba(64, 33, 102, 1);
+    min-width: 107px;
+    min-height: 33px;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+.link1:hover{
+    background-color: rgba(30, 0, 66, 1);
+}
+
+.main{
+    display: flex;
+    width: 485px;
+    height: 696px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 233px 135px 95px 820px;
+    margin-top: 220px;
+    z-index: 3;
+}
+
+.text1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(93, 57, 116, 1);
+}
+
+h1{
+    color: #E8E8E8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+   
+}
+
+.text2{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(87, 87, 87, 1);
+}
+
+.text{
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+}
+
+.text p{
+    
+    align-self: stretch;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%;
+    color: rgba(192, 192, 192, 1);
+}
+
+.resume_main{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 233px 160px 95px 780px;
+    z-index: 3;
+}
+
+.card{
+    display: flex;
+    width: 500px;
+    min-height: 232px;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.left{
+    display: flex;
+    width: 124px;
+    min-height: 232px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.left_text1{
+    display: flex;
+    width: 103px;
+    height: 19px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px; 
+    color: rgba(93, 57, 116, 1);
+}
+
+.left_text2{
+    display: flex;
+    min-width: 114px;
+    height: 38px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px; 
+    color: rgba(87, 87, 87, 1);
+}
+
+.leftline{
+    display: flex;
+    width: 2px;
+    min-height: 232px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #A60AC7;
+    box-shadow: 0px 4px 4px 0px #A60AC7;
+}
+
+.right{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.right_text1{
+    display: flex;
+    min-width: 320px;
+    height: 22px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%; 
+    color: rgba(232, 232, 232, 1);
+}
+
+.right_text2{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    height: 160px;
+    justify-content:flex-start;
+    align-items: start;
+    list-style-type: circle;
+    flex-shrink: 0;
+    align-self: stretch;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Aharoni Bold', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.5%;
+    color: rgba(232, 232, 232, 1);
+}
+
+.main_g{
+    display: flex;
+    flex-wrap: wrap;
+    width: 485px;
+    height: 696px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 233px 135px 95px 820px;
+    margin-top: 220px;
+    z-index: 3;
+    gap: 20px;
+
+}
+
+.im_g{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(166, 10, 199, 0.30);
+}
+
+.cer{
+    display: flex;
+}
