@@ -1,3 +1,67 @@
+let card = [
+    {
+        img_card: "../03_img/js.png",
+        img_alt: "Лабороторная работа по JS Функции",
+        link_card: "../05_project/Лаб раб 5_Кваскова НГ/01_html/index.html",
+    },
+
+    {
+        img_card: "../03_img/js.png",
+        img_alt: "Лабороторная работа по JS Массивы",
+        link_card: "../05_project/Лаб раб 3_Кваскова НГ/01_html/index.html",
+    },
+
+    {
+        img_card: "../03_img/js.png",
+        img_alt: "Лабороторная работа по JS №3",
+        link_card: "../05_project/Доп_лаб_раб по JS №2_Кваскова НГ/01_html/index.html",
+    },
+    {
+        img_card: "../03_img/js.png",
+        img_alt: "Лабороторная работа по JS №2",
+        link_card: "../05_project/Доп_лаб_раб по JS_Кваскова НГ/01_html/index.html",
+    },
+    {
+        img_card: "../03_img/js.png" ,
+        img_alt: "Лабороторная работа по JS №1" ,
+        link_card: "../05_project/Лабороторная по JS №1_Кваскова НГ/01_html/index.html",
+    },
+    {
+        img_card: "../03_img/final_html_css.png" ,
+        img_alt: "Зачетная работа HTML/CSS",
+        link_card: "../05_project/Зачетная работа html_css/02_html/index.html",
+    },
+    {
+        img_card: "../03_img/css.png" ,
+        img_alt: "Лабороторная работа №3",
+        link_card: "../05_project/Лаб_раб 3_Кваскова НГ/qr-code-component-main/html/index.html",
+    },
+    {
+        img_card: "../03_img/html.png" ,
+        img_alt: "Лабороторная работа №2",
+        link_card: "../05_project/Лаб раб 2_Кваскова НГ/html/index.html",
+    },
+    {
+        img_card: "../03_img/html.png",
+        img_alt: "Лабороторная работа №1" ,
+        link_card: "../05_project/Лаб раб _1_Fullver_Кваскова НГ/html/index.html" ,
+    }
+];
+
+let cardStr = '';
+for (let card_elem of card){
+    cardStr += `
+    <div class = "card_box">
+    <img src= "${card_elem.img_card}" alt= "${card_elem.img_alt}" class = "card_img">
+    <a href = "${card_elem.link_card}" target="_blank">${card_elem.img_alt}</a>
+    </div>
+    `
+};
+
+let cardContainer = document.querySelector("#cards");
+cardContainer.insertAdjacentHTML("beforeend", cardStr);
+
+
 let cardNodeList = document.querySelectorAll('.card_box'); 
 let card_boxArr = [...cardNodeList];
 let ButShow = document.querySelector('#add');
@@ -32,8 +96,6 @@ ButHide.addEventListener("click", function (){
    };
     ButShow.hidden = false;
     ButHide.hidden = true;
+    
 
 });
-
-
-
