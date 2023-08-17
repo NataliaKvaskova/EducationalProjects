@@ -5,13 +5,13 @@ let ButHide = document.querySelector('#hide');
     ButHide.hidden = true;
 
 for (let i = 0; i < card_boxArr.length; i++){
-     if (i > 3){
+     if (i > 4){
         card_boxArr[i].hidden = true;
      } 
 };
 
 ButShow.addEventListener("click", function (){
-    let cardNext = card_boxArr.slice (4, );
+    let cardNext = card_boxArr.slice (5, );
     for (let card of cardNext){
         if (cardNext.length === 0) {
         ButShow.hidden = true;
@@ -19,14 +19,14 @@ ButShow.addEventListener("click", function (){
         }
             console.log (card);
             card.hidden = false;
-            cardNext = cardNext.slice(4,);
+            cardNext = cardNext.slice(5,);
             };
 });
 
 ButHide.addEventListener("click", function (){
     card_boxArr = [...cardNodeList];
     for (let i = 0; i < card_boxArr.length; i++){
-        if (i > 3){
+        if (i > 4){
            card_boxArr[i].hidden = true;
         } 
    };

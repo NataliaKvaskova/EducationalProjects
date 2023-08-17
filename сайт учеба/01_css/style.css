@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
     border-color: aqua;
     justify-content: center;
     align-content: center;
-    row-gap: 0.1rem;
+    row-gap: 0.3rem;
     column-gap: 1rem;
 }
 
@@ -46,10 +46,12 @@ header{
     background-image: url('../03_img/Шапка_основная\ 1.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2rem;
 }
 
-h1{
+header h1{
     width: 100%;
     color: #000;
     text-align: center;
@@ -58,31 +60,48 @@ h1{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    position: absolute;
-    bottom: 2rem;
 }
 
 main{
     grid-column-start: 2;
     grid-column-end: 3;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    align-items: start;
-    flex-wrap: wrap;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    gap: 1rem;
+    /* display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap; */
 
 }
+.button{
+    padding-left: 83rem;
+    padding-top: 2rem;
+    width: 30rem;
+}
 
-.hidden{
-    display: none;
+.button button{
+    width: 15rem;
+    height: 3rem;
+    background-color: #f8f4e6;
+    border-radius: 1rem;
+    border-color: #d5d5d5;
+    font-size: 1.4rem;
+    color:blue;
+}
+
+.cards_box{
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    align-content: start;
+    padding: 0rem 2rem;
+    
 }
 
 .card_box{
-    width: 17.5rem;
+    width: 15rem;
     height: 15rem;
     border-radius: 1rem;
     border: 0.1rem solid rgb(198, 196, 196);
